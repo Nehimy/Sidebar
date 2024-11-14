@@ -4,9 +4,155 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg" href="http://ney.lh/css/Notitas_icono.svg">
-  <title>List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg" href="img/k2.svg">
+  <title>Sidebar - Dasboard</title>
 </head>
 <body>
+  <div class="container">
+    <div class="sidebar"
+         hx-on:click="document.querySelector('.sidebar').classList.toggle('close')
+                let link = document.querySelectorAll('.link')
+                for (var i = 0; i < link.length; i++) {
+                link[i].classList.toggle('blink')
+                }
+         "
+    >
+      <div class="logo">
+        <svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" width="43.537018px" height="43.363182px"
+             viewBox="0 0 73.537018 73.363182">
+          <g transform="translate(-208.73146,-220.81838)">
+            <g transform="matrix(0.27282726,0,0,0.27282726,178.52088,191.61219)">
+              <rect
+                style="fill:#ffffff;stroke-width:2;paint-order:markers fill stroke"
+                width="269.53693"
+                height="268.89975"
+                x="110.73154"
+                y="107.05013"
+                ry="84.748024" />
+              <path class="paint"
+                    style="fill:#000000;stroke-width:0.853088"
+                    d="m 260.0015,320.96843 c -19.91183,-35.2467 -32.55685,-57.91266 -32.95765,-59.07592 -0.24831,-0.72041 13.46844,-25.69812 31.38794,-57.15648 l 31.82887,-55.87696 20.68072,-0.22862 c 11.37435,-0.12563 20.55043,0.0982 20.39116,0.49821 -0.15923,0.39978 -14.39731,25.51667 -31.64021,55.81528 -17.2429,30.2986 -31.34971,55.60285 -31.34848,56.23188 0.002,0.62879 8.8307,17.03731 19.62093,36.46334 10.79024,19.42615 19.61851,35.64542 19.61851,36.0428 0,0.39739 -8.99809,0.72255 -19.99571,0.72255 H 267.59187 Z M 159.67179,277.4071 c -0.2359,-0.38184 6.11571,-11.61043 14.11469,-24.95271 7.99891,-13.34228 14.94184,-25.10681 15.42866,-26.14339 0.76097,-1.62042 -0.68741,-4.75773 -10.32618,-22.36754 -6.16614,-11.26553 -11.21111,-20.69329 -11.21111,-20.95059 0,-0.25726 9.07741,-0.36503 20.17208,-0.23918 l 20.17209,0.22874 11.85314,20.78222 11.85317,20.78239 -15.91461,26.77705 -15.91454,26.77707 h -19.89915 c -10.9446,0 -20.09233,-0.31235 -20.32824,-0.69406 z"
+
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="space"></div>
+      <section>
+        <ul class="nav-linsk">
+          <li>
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path class="paint" d="M10 3H4C3.447 3 3 3.447 3 4v6c0 .553.447 1 1 1h6c.553 0 1-.447 1-1V4C11
+                           3.447 10.553 3 10 3zM9 9H5V5h4V9zM20 3h-6c-.553 0-1 .447-1 1v6c0 .553.447 1 1
+                           1h6c.553 0 1-.447 1-1V4C21 3.447 20.553 3 20 3zM19 9h-4V5h4V9zM10 13H4c-.553
+                           0-1 .447-1 1v6c0 .553.447 1 1 1h6c.553 0 1-.447 1-1v-6C11 13.447 10.553 13 10
+                           13zM9 19H5v-4h4V19zM17 13c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4S19.206
+                           13 17 13zM17 19c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2S18.103 19 17 19z"/>
+            </svg>
+            <a class="link" href="#">Dashboard</a>
+          </li>
+          <li>
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path class="paint" d="M21.706,5.291l-2.999-2.998C18.52,2.105,18.266,2,18,2H6C5.734,2,5.48,
+                           2.105,5.293,2.293L2.294,5.291 C2.112,5.472,2,5.722,2,5.999V19c0,1.103,0.897,
+                           2,2,2h16c1.103,0,2-0.897,2-2V5.999C22,5.722,21.888,5.472,21.706,5.291z
+                           M6.414,4 h11.172l0.999,0.999H5.415L6.414,4z M4,19V6.999h16L20.002,19H4z"/>
+              <path d="M15 12L9 12 9 10 7 10 7 14 17 14 17 10 15 10z"/>
+            </svg>
+            <a class="link" href="#">Category</a>
+          </li>
+          <li>
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path class="paint" d="M3,5v3v6v3v2c0,2.201,1.794,3,3,3h15v-2H6.012C5.55,19.988,5,19.806,5,19s0.55-0.988,1.012-1H19h1h1v-1v-2V4 c0-1.103-0.897-2-2-2H6C4.794,2,3,2.799,3,5z"/>
+            </svg>
+            <a class="link" href="#">Post</a>
+          </li>
+          <li>
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path class="paint dark-background" d="m 12,11.753906 v 0.28711 l 7.046875,7.046875 C
+                           20.869701,17.275532 22,14.767427 22,12 c 0,-0.08302 -0.0097,
+                           -0.163554 -0.01172,-0.246094 z"
+                    style="stroke:#ffffff;stroke-opacity:1"/>
+              <path class="paint dark-background" d="M 12,2 C 6.486,2 2,6.486 2,12 c 0,5.514 4.486,10
+                           10,10 2.746573,0 5.237786,-1.113408 7.046875,
+                           -2.912109 L 12,12.041016 v 0 0 -0.28711 0 z"
+                    style="stroke:#ffffff;stroke-opacity:1"/>
+              <path class="paint dark-background" d="m 12,2 v 9.753906 h 9.988281 C 21.856006,6.3541846
+                           17.430982,2 12,2 Z"
+                    style="stroke:#ffffff;stroke-opacity:1"/>
+            </svg>
+            <a class="link" href="#">Analytics</a>
+          </li>
+          <li>
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path class="paint" d="M13.553 11.658L9.553 9.658 7.105 14.553 8.895 15.447 10.447
+                           12.342 14.447 14.342 16.895 9.447 15.105 8.553z"/>
+              <path class="paint"
+                    d="M 2.8515625,4.640625 V 21 H 19.746094 V 19 H 4.8515625 V 4.640625 Z"/>
+            </svg>
+            <a class="link" href="#">chart</a>
+          </li>
+          <li>
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path class="paint" d="M3 8h2v5c0 2.206 1.794 4 4 4h2v5h2v-5h2c2.206 0 4-1.794 4-4V8h2V6H3V8zM7
+                           2H9V5H7zM15 2H17V5H15z"/>
+            </svg>
+            <a class="link" href="#">Plugins</a>
+          </li>
+          <li>
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path class="paint" d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10c5.514,0,10-4.486,10-10S17.514,2,12,2z
+                           M15,15l-8,2l2-8l8-2L15,15z"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>
+            <a class="link" href="#">Explore</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <main>
+      <div class="box">
+        <p> El pasaje estándar Lorem Ipsum, usado desde el año 1500.
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+        <p>
+          Sección 1.10.32 de "de Finibus Bonorum et Malorum", escrito por Cicero en el 45 antes de Cristo
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        </p>
+        <p>
+          Traducci�n hecha por H. Rackham en 1914
+          "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+        </p>
+        <p>
+          Sección 1.10.33 de "de Finibus Bonorum et Malorum", escrito por Cicero en el 45 antes de Cristo
+          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+        </p>
+<p>
+Traducci�n hecha por H. Rackham en 1914
+"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+</p>
+        <p>
+          Sección 1.10.33 de "de Finibus Bonorum et Malorum", escrito por Cicero en el 45 antes de Cristo
+          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+        </p>
+<p>
+Traducci�n hecha por H. Rackham en 1914
+"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+</p>
+        <p>
+          Sección 1.10.33 de "de Finibus Bonorum et Malorum", escrito por Cicero en el 45 antes de Cristo
+          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+        </p>
+<p>
+Traducci�n hecha por H. Rackham en 1914
+"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+</p>
+
+      </div>
+    </main>
+    <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+    <!-- <script  src="script.js"></script> -->
 </body>
 </html>
